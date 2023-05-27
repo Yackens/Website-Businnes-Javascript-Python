@@ -26,7 +26,6 @@ class Post(models.Model):
     created = models.DateTimeField(auto_now_add=True, verbose_name="Created Date")
     updated = models.DateTimeField(auto_now=True, verbose_name="Modified Date")
 
-
     class Meta:
         verbose_name = "Post"
         verbose_name_plural = "Posts"
