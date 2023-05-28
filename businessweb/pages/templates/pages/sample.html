@@ -1,9 +1,10 @@
 {% extends 'core/base.html' %}
 
-{% block title %} Contacto {% endblock %}
+{% load static %}
 
-{% block section %}
+{% block title %}Muestra{% endblock %}
 
+{% block content %}
   <section class="page-section about-heading">
     <div class="container">
       <div class="about-heading-content mbtm">
@@ -15,6 +16,7 @@
               </h2>
               <div class="section-content">
                   {{page.content|linebreaks}}
+                  <p> Pagina de contenido </p>
               </div>
             </div>
           </div>
@@ -22,5 +24,4 @@
       </div>
     </div>
   </section>
-
 {% endblock %}
