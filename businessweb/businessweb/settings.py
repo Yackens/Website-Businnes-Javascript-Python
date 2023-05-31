@@ -38,8 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
     'blog',
+    'ckeditor',
+    'contact',
+    'core',
     'pages.apps.PagesConfig',
     'services',
     'social.apps.SocialConfig',
@@ -132,3 +134,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Media Config
 MEDIA_URL = "/personalweb/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+# CKeditor
+"""CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Basic',
+    }
+}"""
+
+# Email Config
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '4b0818eaa81c62'
+EMAIL_HOST_PASSWORD = '163944d5c3417e'
+EMAIL_PORT = '2525'
